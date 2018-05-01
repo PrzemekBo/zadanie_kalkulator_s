@@ -16,8 +16,8 @@ public class Country implements Serializable {
     @Id
     String codeOfCountry;
 
-    @Column(name="name")
-    String name;
+    @Column(name="country")
+    String nameOfCountry;
 
     @OneToOne(cascade=CascadeType.ALL)
     ForeignExchange foreignExchange;
@@ -25,6 +25,13 @@ public class Country implements Serializable {
 
     @OneToOne(cascade=CascadeType.ALL)
     Taxation taxation;
+
+
+    public Country( String code, String name) {
+        this.nameOfCountry = nameOfCountry;
+        this.codeOfCountry = codeOfCountry;
+
+    }
 
 
 

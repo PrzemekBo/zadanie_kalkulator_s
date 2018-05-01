@@ -18,7 +18,7 @@ public class Taxation implements Serializable {
     @Column(name="value" )
     BigDecimal value;
 
-    @Column(name="constant_costs" )
+    @Column
     BigDecimal constantCosts;
 
     public Taxation(BigDecimal value, BigDecimal costs) {
