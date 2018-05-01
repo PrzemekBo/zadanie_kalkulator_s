@@ -13,7 +13,8 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Country implements Serializable {
 
-
+    @Id
+    String codeOfCountry;
 
     @Column(name="name")
     String name;
