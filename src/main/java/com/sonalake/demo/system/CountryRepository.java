@@ -1,8 +1,7 @@
-package com.sonalake.demo;
+package com.sonalake.demo.system;
 
+import com.sonalake.demo.model.Country;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.math.BigDecimal;
 
 public interface CountryRepository extends JpaRepository<Country,Long> {
 }

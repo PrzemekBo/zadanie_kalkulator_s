@@ -1,4 +1,4 @@
-package com.sonalake.demo;
+package com.sonalake.demo.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
