@@ -7,9 +7,8 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface CountryRepository extends JpaRepository<Country,Long> {
+public interface CountryRepository extends JpaRepository<Country, Long> {
 
-
-    @Query("SELECT c FROM Country c WHERE c.code = ?1")
-    Country findByCountryCode(String codeOfCountry);
+    @Query("SELECT country FROM Country country WHERE country.code = ?1")
+    Country selectByCountryCode(String code);
 }

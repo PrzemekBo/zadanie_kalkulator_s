@@ -7,18 +7,20 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 @Entity
 @Table(name = "taxation")
-@Data
 @NoArgsConstructor
+@Data
 public class Taxation implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    Long id;
 
     @Column(name="value" )
     BigDecimal value;
 
-    @Column
+    @Column(name="constant_costs" )
     BigDecimal constantCosts;
 
     public Taxation(BigDecimal value, BigDecimal costs) {

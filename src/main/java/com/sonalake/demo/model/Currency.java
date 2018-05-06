@@ -8,21 +8,23 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name = "foreignExchange")
-@Data
+@Table(name = "currency")
 @NoArgsConstructor
-public class ForeignExchange implements Serializable {
+@Data
+public class Currency implements Serializable {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    Long id;
 
     @Column(name="code", nullable = false, unique = true)
     String code;
 
+    @Column(name="display_name")
+    String displayName;
 
-    public ForeignExchange(String code ){
+    public Currency(String code ){
         this.code = code;
     }
 
 }
-
-
