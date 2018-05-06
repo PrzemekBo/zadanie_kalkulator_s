@@ -1,4 +1,6 @@
-var nbpService = {
+
+
+var bankService = {
     loadCurrencyRate: function(currencyCode, callback) {
       if( currencyCode != 'PLN') {
           var nbpApiUrl = 'http://api.nbp.pl/api/exchangerates/rates/a/' + currencyCode + '/?format=json';

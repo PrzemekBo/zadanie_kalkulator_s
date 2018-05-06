@@ -17,11 +17,9 @@ public class Currency implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
 
-    @Column(name="code", nullable = false, unique = true)
+    @Column(name="code")
     String code;
 
-    @Column(name="display_name")
-    String displayName;
 
     public Currency(String code ){
         this.code = code;

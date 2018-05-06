@@ -1,6 +1,6 @@
+
+
 var countryService = {
-
-
 
     getCountries : function( callback ) {
         $.get("http://localhost:8080/country/all/", function(countryCollection, status){
