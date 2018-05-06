@@ -9,7 +9,7 @@ Used technologies :
  - Bootstrap 4
  - HTML
  - CSS
- - JavaSCript
+ - JavaScript
  - jQuery
 
 To run application, call main functions. 
